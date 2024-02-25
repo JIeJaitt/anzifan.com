@@ -13,7 +13,7 @@ type PostSeoProps = {
 }
 
 const PostSeo: FC<PostSeoProps> = ({
-    author = "异次元de机智君",
+    author = "JIeJaitt",
     date,
     description,
     image,
@@ -23,7 +23,7 @@ const PostSeo: FC<PostSeoProps> = ({
 }) => {
     const publishedAt = new Date(date).toISOString();
     const featuredImage = {
-        url: image ? `${image}` : `${me.site}/static/images/og.png`,
+        url: image ? `${image}` : `${me.site}/static/images/avatar.png`,
         alt: title,
     }
     return (
